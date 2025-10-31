@@ -1,4 +1,4 @@
-# TYPO3 CMS Base Distribution
+# TYPO3 CMS 
 
 Erstelle eine neue SQLite3-Datenbank mit PHP:
 
