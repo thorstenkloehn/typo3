@@ -3,7 +3,7 @@
 nbproject
 /config/
 /var/*
-!/var/labels
+# /var/labels
 /vendor
 /public/*
 !/public/.htaccess
