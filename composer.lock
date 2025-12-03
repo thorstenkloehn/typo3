@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5d23b6fd19af02630da2edcbd2cbd38a",
+    "content-hash": "29121bfeabd3b877ef5648f536f90b47",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -119,6 +119,71 @@
                 "source": "https://github.com/ChristianRiesen/base32/tree/1.6.0"
             },
             "time": "2021-02-26T10:19:33+00:00"
+        },
+        {
+            "name": "codingms/parsedown-extra",
+            "version": "4.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.com/codingms/typo3-public/parsedown_extra.git",
+                "reference": "a7a6fbff2f27d207bc0b2dd0f2c7414c373173b6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/codingms%2Ftypo3-public%2Fparsedown_extra/repository/archive.zip?sha=a7a6fbff2f27d207bc0b2dd0f2c7414c373173b6",
+                "reference": "a7a6fbff2f27d207bc0b2dd0f2c7414c373173b6",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^8.1",
+                "typo3/cms-core": ">=12.4.0,<13.5"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "tags": "Stable, PHP 7.0, PHP 7.1, PHP 7.2, PHP 7.3, PHP 7.4, PHP 8.0, PHP 8.1, PHP 8.2, PHP 8.3, PHP 8.4, TYPO3 7.6, TYPO3 8.7, TYPO3 9.5, TYPO3 10.4, TYPO3 11.5, TYPO3 12.4, TYPO3 13.4, English, German, OpenSource, Free, TER",
+                "typo3/cms": {
+                    "extension-key": "parsedown_extra"
+                },
+                "compatibility": {
+                    "typo3-7.6": "1.1.0-1.4.2",
+                    "typo3-8.7": "1.1.0-1.4.2",
+                    "typo3-9.5": "1.2.0-2.0.2",
+                    "typo3-10.4": "2.0.0-2.3.2",
+                    "typo3-11.5": "2.1.0-3.0.5",
+                    "typo3-12.4": "3.0.0-x.x.x",
+                    "typo3-13.4": "4.0.0-x.x.x"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "CodingMs\\ParsedownExtra\\": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "coding.ms GmbH",
+                    "homepage": "https://www.coding.ms",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Parsedown Extra - Markdown & Mermaid support for TYPO3",
+            "homepage": "https://www.coding.ms",
+            "keywords": [
+                "extension",
+                "markdown",
+                "typo3"
+            ],
+            "support": {
+                "docs": "https://www.coding.ms/documentation/typo3-parsedown-extra",
+                "issues": "https://gitlab.com/codingms/typo3-public/parsedown_extra/-/issues",
+                "source": "https://gitlab.com/codingms/typo3-public/parsedown_extra"
+            },
+            "time": "2025-10-20T11:33:12+00:00"
         },
         {
             "name": "dasprid/enum",
