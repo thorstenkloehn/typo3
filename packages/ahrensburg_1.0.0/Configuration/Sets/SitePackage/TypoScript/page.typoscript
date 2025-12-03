@@ -43,7 +43,7 @@ page {
     }
 
     includeCSS {
-        ahrensburg_layout = EXT:ahrensburg/Resources/Lib/css/bootstrap.min.css
+        ahrensburg_layout = EXT:ahrensburg/Resources/Public/bootstrap/css/bootstrap.min.css
     }
 
     includeJSLibs {
