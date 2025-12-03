@@ -1,6 +1,7 @@
 .DS_Store
 .idea
 nbproject
+/config/
 /var/*
 !/var/labels
 /vendor
