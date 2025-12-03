@@ -1,0 +1,21 @@
+{
+    "name": "thorsten/boostrap5",
+    "type": "typo3-cms-extension",
+    "description": "Boostrap 5",
+    "homepage": "https://typo3.ahrensbiurg.",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+        "bk2k/bootstrap-package": "^15.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Thorsten\\Boostrap5\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "boostrap5"
+        }
+    }
+}

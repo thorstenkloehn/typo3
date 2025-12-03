@@ -1,0 +1,4 @@
+name: thorsten/boostrap5
+label: 'Boostrap5'
+dependencies:
+  - bootstrap-package/full
