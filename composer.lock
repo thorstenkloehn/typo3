@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a751fdadce06bf32e23bd53515ca93ba",
+    "content-hash": "5d23b6fd19af02630da2edcbd2cbd38a",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -5044,6 +5044,42 @@
             "time": "2025-11-16T10:14:42+00:00"
         },
         {
+            "name": "thorsten/ahrensburg",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./packages/ahrensburg_1.0.0",
+                "reference": "b2a7ccdeabcd17103c7ac103318278b3ddac163f"
+            },
+            "require": {
+                "typo3/cms-core": "^13.4",
+                "typo3/cms-fluid-styled-content": "^13.4",
+                "typo3/cms-rte-ckeditor": "^13.4"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "ahrensburg"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Thorsten\\Ahrensburg\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Ahrensburg Template",
+            "homepage": "https://typo3.ahrensburg.city",
+            "keywords": [
+                "TYPO3 CMS"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "typo3/class-alias-loader",
             "version": "v1.2.0",
             "source": {
@@ -7029,7 +7065,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "thorsten/ahrensburg": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {},
