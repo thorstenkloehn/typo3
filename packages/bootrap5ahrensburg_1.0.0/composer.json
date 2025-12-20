@@ -1,0 +1,23 @@
+{
+    "name": "thorsten/bootrap5ahrensburg",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "homepage": "https://typo3.ahrensburg.city",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+        "typo3/cms-core": "^13.4",
+        "typo3/cms-rte-ckeditor": "^13.4",
+        "typo3/cms-fluid-styled-content": "^13.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Thorsten\\Bootrap5ahrensburg\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "bootrap5ahrensburg"
+        }
+    }
+}
