@@ -30,7 +30,7 @@ find typo3 -type f -exec chmod 644 {} \;
 Erstelle die folgende nginx-Konfigurationsdatei:
 
 ```bash
-sudo nano /etc/nginx/conf.d/typo3
+sudo nano /etc/nginx/conf.d/typo3.conf
 ```
 
 Folgende ein

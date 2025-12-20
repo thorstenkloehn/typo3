@@ -43,8 +43,10 @@ page {
     }
 
     includeCSS {
-        bootrap5ahrensburg_layout = EXT:bootrap5ahrensburg/Resources/Public/Css/layout.css
+      bootrap5ahrensburg_layout = EXT:bootrap5ahrensburg/Resources/Public/boostrap/css/bootstrap.min.css 
+
     }
+
 
     includeJSLibs {
 
@@ -59,6 +61,7 @@ page {
     }
 
     includeJSFooter {
-        bootrap5ahrensburg_scripts = EXT:bootrap5ahrensburg/Resources/Public/JavaScript/main.js
-    }
+       bootrap5ahrensburg_scripts = EXT:bootrap5ahrensburg/Resources/Public/boostrap/js/bootstrap.bundle.min.js   
+       
+       }
 }
