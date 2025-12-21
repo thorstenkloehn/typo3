@@ -146,15 +146,24 @@ server {
 Um die TYPO3-Installation auf einen anderen Server zu übertragen, kannst du folgenden `rsync`-Befehl verwenden:
 
 ```bash
-rsync -avz --exclude 'config/sites/' \
-    --exclude 'config/system/' \
-    --exclude 'var/' \
-    --exclude '.git/' \
-    --exclude '.gitignore' \
-    --exclude 'composer.json' \
-    --exclude 'composer.lock' \
-    /var/www/typo3/ user@server:/var/www/typo3/
+rsync -avz --exclude 'config/' \
+  --exclude '.DS_Store' \
+  --exclude '.idea/' \
+  --exclude 'nbproject/' \
+  --exclude 'var/' \
+  --exclude 'vendor/' \
+  --exclude 'public/' \
+  --exclude '.git/' \
+  --exclude '.gitignore' \
+  /var/www/typo3/ user@server:/var/www/typo3/
 ```
+
+## Composer Ausführen
+
+```
+composer install --no-dev --optimize-autoloader
+```
+
 
 Passe `user@server` entsprechend deiner Zielumgebung an. Weitere Ausschlüsse können je nach Bedarf ergänzt werden, z.B. für temporäre Dateien oder Backups.
 
