@@ -140,10 +140,9 @@ server {
 
 ## Server übetragen
 
-```
 
 
-```bash
+
 Um die TYPO3-Installation auf einen anderen Server zu übertragen, kannst du folgenden `rsync`-Befehl verwenden:
 
 ```bash
