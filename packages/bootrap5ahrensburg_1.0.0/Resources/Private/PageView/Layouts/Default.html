@@ -2,25 +2,28 @@
     <header>
   <a class="navbar-brand text-dark" href="/">ahrensburg.city</a>
   </header>
-<ul>
-    <f:for each="{mainnavigation}" as="mainnavigationItem">
-        <li class="{f:if(condition: mainnavigationItem.active, then:'active')}">
-            <a href="{mainnavigationItem.link}" target="{mainnavigationItem.target}" title="{mainnavigationItem.title}">
-                {mainnavigationItem.title}
-            </a>
-            <f:if condition="{mainnavigationItem.children}">
-                <ul>
-                    <f:for each="{mainnavigationItem.children}" as="child">
-                        <li class="{f:if(condition: child.active, then:'active')}">
-                            <a href="{child.link}" target="{child.target}" title="{child.title}">
-                                {child.title}
-                            </a>
-                        </li>
-                    </f:for>
-                </ul>
-            </f:if>
-        </li>
-    </f:for>
-</ul>
+<div class="row">
+    <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+        <div class="position-sticky pt-3">
+            <ul class="nav flex-column">
+                <f:for each="{mainnavigation}" as="mainnavigationItem">
+                    <li class="nav-item {f:if(condition: mainnavigationItem.active, then:'active')}">
+                        <a class="nav-link" href="{mainnavigationItem.link}" target="{mainnavigationItem.target}" title="{mainnavigationItem.title}">{mainnavigationItem.title}</a>
+                        <f:if condition="{mainnavigationItem.children}">
+                            <ul class="nav flex-column ms-3">
+                                <f:for each="{mainnavigationItem.children}" as="child">
+                                    <li class="nav-item {f:if(condition: child.active, then:'active')}">
+                                        <a class="nav-link" href="{child.link}" target="{child.target}" title="{child.title}">{child.title}</a>
+                                    </li>
+                                </f:for>
+                            </ul>
+                        </f:if>
+                    </li>
+                </f:for>
+            </ul>
+        </div>
+    </nav>
+    
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
 <f:render section="Main" />
 </div>
