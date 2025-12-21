@@ -3,17 +3,23 @@
   <a class="navbar-brand text-dark" href="/">ahrensburg.city</a>
   </header>
 <div class="row">
+    <!-- Mobile Navigation Button -->
     <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
-        <div class="position-sticky pt-3">
+        <!-- Offcanvas trigger for mobile -->
+        <button class="btn btn-primary d-md-none mb-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-controls="mobileNav">
+            Navigation
+        </button>
+        <!-- Desktop Sidebar Navigation -->
+        <div class="position-sticky pt-3 d-none d-md-block">
             <ul class="nav flex-column">
                 <f:for each="{mainnavigation}" as="mainnavigationItem">
                     <li class="nav-item {f:if(condition: mainnavigationItem.active, then:'active')}">
-                        <a class="nav-link" href="{mainnavigationItem.link}" target="{mainnavigationItem.target}" title="{mainnavigationItem.title}">{mainnavigationItem.title}</a>
+                        <a class="nav-link text-dark p-0" href="{mainnavigationItem.link}" target="{mainnavigationItem.target}" title="{mainnavigationItem.title}">• {mainnavigationItem.title}</a>
                         <f:if condition="{mainnavigationItem.children}">
                             <ul class="nav flex-column ms-3">
                                 <f:for each="{mainnavigationItem.children}" as="child">
                                     <li class="nav-item {f:if(condition: child.active, then:'active')}">
-                                        <a class="nav-link" href="{child.link}" target="{child.target}" title="{child.title}">{child.title}</a>
+                                        <a class="nav-link text-dark p-0" href="{child.link}" target="{child.target}" title="{child.title}">• {child.title}</a>
                                     </li>
                                 </f:for>
                             </ul>
@@ -23,7 +29,39 @@
             </ul>
         </div>
     </nav>
-    
+
+    <!-- Offcanvas Mobile Navigation -->
+    <div class="offcanvas offcanvas-start d-md-none" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="mobileNavLabel">Navigation</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <f:for each="{mainnavigation}" as="mainnavigationItem">
+                    <li class="nav-item {f:if(condition: mainnavigationItem.active, then:'active')}">
+                        <a class="nav-link text-dark p-0" href="{mainnavigationItem.link}" target="{mainnavigationItem.target}" title="{mainnavigationItem.title}">• {mainnavigationItem.title}</a>
+                        <f:if condition="{mainnavigationItem.children}">
+                            <ul class="nav flex-column ms-3">
+                                <f:for each="{mainnavigationItem.children}" as="child">
+                                    <li class="nav-item {f:if(condition: child.active, then:'active')}">
+                                        <a class="nav-link text-dark p-0" href="{child.link}" target="{child.target}" title="{child.title}">• {child.title}</a>
+                                    </li>
+                                </f:for>
+                            </ul>
+                        </f:if>
+                    </li>
+                </f:for>
+            </ul>
+        </div>
+    </div>
+
     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
 <f:render section="Main" />
+<footer>
+
+
+
+
+</footer>
 </div>
