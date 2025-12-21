@@ -157,7 +157,7 @@ rsync -avz --exclude 'config/sites/' \
 ```
 
 Passe `user@server` entsprechend deiner Zielumgebung an. Weitere Ausschlüsse können je nach Bedarf ergänzt werden, z.B. für temporäre Dateien oder Backups.
-```
+
 
 Erstelle die folgende nginx-Konfigurationsdatei:
 
